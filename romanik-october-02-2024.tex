@@ -83,6 +83,13 @@
 				U(r_{ij}) = \Psi_{HS}(r_{ij}) + \Phi(r_{ij}),
 			\end{equation*}
 			
+			\vspace{10mm}
+			\textbf{Goals}:
+			
+			-- find the coordinates of critical point;
+			
+			-- investigate the impact of potential parameters on the critical point.
+			
 			\column{0.5\textwidth}
 				\begin{figure}[htbp]
 				\includegraphics[width=0.9\textwidth,angle=0]{hc_vdW_fluids} \\
@@ -129,7 +136,7 @@
 		\\
 		\hfill
 		
-		\textit{I.R.~Yukhnovskii, R.V.~Romanik, J. Phys. Stud., {\bf 28}(2), 2602, (2024)}
+		\textit{Yukhnovskii, Romanik, J. Phys. Stud., {\bf 28}(2), 2602, (2024)}
 		
 	\end{frame}
 	
@@ -331,6 +338,47 @@
 		\end{eqnarray*}
 	\end{frame}
 	
+	\begin{frame}
+		\frametitle{Numerical values for coefficients}
+		
+		\begin{columns}
+			\begin{column}{0.5\textwidth}
+				\begin{table}[h]
+					\noindent\caption{Numerical values for universal coefficients calculated at $x^* = 0$. These are independent of either the interaction potential or the potential averaging details during the layer-by-layer integration.}\vskip3mm\tabcolsep4.5pt
+					\begin{tabular}{|c|c|c|c|c|}
+						\hline
+						$s^*$ & $R_{11}$ \quad & $R_{22}$ & $R_{12}^{(0)}$  & $R_{21}^{(0)}$\\
+						\hline
+						3.5862 & 7.6315  & 1.0000 & 3.8502 & 1.1753 \\
+						\hline
+						\hline
+						$E_1$ & $E_2$ \quad & $D$ & $R^{(0)}$  & $R_1^{(0)}$\\
+						\hline
+						8.2552 & 0.3763  & 1.0860 & -0.5307 & 0.1620 \\
+						\hline
+					\end{tabular}
+					\label{tab:num_coef}
+				\end{table}
+			\end{column}
+			
+			\begin{column}{0.5\textwidth}
+				\begin{table}[h]
+					\noindent\caption{Numerical values for non-universal coefficients calculated at $x^* = 0$. These are dependent on the details of potential averaging during the layer-by-layer integration.}\vskip3mm\tabcolsep4.5pt
+					\begin{tabular}{|c|c|c|c|}
+						\hline
+						Averaging & $\bar{q}$ \quad & $\bar{r}$ & $\bar{u}$ \\
+						\hline
+						Arithmetic & 0.5389  & 0.5389 & 0.6890 \\
+						Spherical & 0.6123 & 0.6123 & 0.8894 \\
+						\hline
+					\end{tabular}
+					\label{tab:num_coef_vs_average}
+				\end{table}
+			\end{column}
+		
+		\end{columns}
+	\end{frame}
+	
 	\section{Results}
 	
 	\begin{frame}
@@ -380,6 +428,8 @@
 			\end{equation*}
 			
 			\textit{Weeks, Chandler, Andersen, J. Chem. Phys. \textbf{54}, 5237 (1971)}
+			
+			\textit{Patsahan, Kozlovskii, Melnyk, J. Phys. Condens. Matter, \textbf{12}, 1595 (2000)}
 			
 			\column{0.5\textwidth}
 			\begin{figure}[htbp]
@@ -439,6 +489,8 @@
 			\end{equation*}
 			
 			\textit{Weeks, Chandler, Andersen, J. Chem. Phys. \textbf{54}, 5237 (1971)}
+			
+			\textit{Patsahan, Kozlovskii, Melnyk, J. Phys. Condens. Matter, \textbf{12}, 1595 (2000)}
 			
 			\column{0.5\textwidth}
 			\begin{figure}[htbp]
@@ -702,6 +754,7 @@
 					\end{array}
 					\right.
 				\end{equation*}
+				
 			\end{column}
 			
 			\begin{column}{0.5\textwidth}
@@ -753,7 +806,8 @@
 				\end{equation*}
 				where $r_{\rm m}=2^{1/6}\sigma$.
 				
-				\textit{Sowers, Sandler, Fluid Phase Equilib \textbf{63}, 1 (1991)}
+				\vspace{5mm}
+				\textit{Sowers, Sandler, Fluid Phase Equilib. \textbf{63},1 (1991)}
 				\hfill
 				\\
 				\hfill
@@ -774,7 +828,7 @@
 				
 				\begin{figure}[htbp]
 					\includegraphics[width=0.9\textwidth,angle=0]{hclj_wca} \\
-					\parbox{0.8\textwidth}{\caption*{Fig. 5. Different regularizations for the hard-core Lennard-Jones potential.
+					\parbox{0.8\textwidth}{\caption*{Fig. 6. Different regularizations for the hard-core Lennard-Jones potential.
 				}}
 				\end{figure}				
 			\end{column}
@@ -803,6 +857,7 @@
 				\end{equation*}
 				where $r_{\rm m}=2^{1/6}\sigma$.
 				
+				\vspace{5mm}
 				\textit{Sowers, Sandler, Fluid Phase Equilib \textbf{63}, 1 (1991)}
 				\hfill
 				\\
@@ -871,7 +926,7 @@
 			\begin{column}{0.5\textwidth}
 				\begin{figure}[htbp]
 					\includegraphics[width=0.9\textwidth,angle=0]{hcmorse} \\
-					\parbox{0.8\textwidth}{\caption*{Fig. 5. Different regularizations for the hard-core Morse potential.
+					\parbox{0.8\textwidth}{\caption*{Fig. 7. Different regularizations for the hard-core Morse potential.
 					}}
 				\end{figure}
 				
@@ -942,7 +997,7 @@
 			\begin{column}{0.5\textwidth}
 				\begin{figure}[htbp]
 					\includegraphics[width=0.65\textwidth,angle=0]{limit_cp_spinodals} \\
-					\parbox{1.0\textwidth}{\caption*{Fig. 2. Spinodal lines for HC Yukawa fluid for $\lambda = 0.5,$ $\lambda = 1.0,$ $\lambda = 1.5,$ $\lambda = 1.8,$ $\lambda = 2.0,$ $\lambda = 2.5,$ $\lambda = 3.0,$ $\lambda = 4.0,$ $\lambda = 5.0,$ $\lambda = 6.0$.
+					\parbox{1.0\textwidth}{\caption*{Fig. 8. Spinodal lines for HC Yukawa fluid for $\lambda = 0.5,$ $\lambda = 1.0,$ $\lambda = 1.5,$ $\lambda = 1.8,$ $\lambda = 2.0,$ $\lambda = 2.5,$ $\lambda = 3.0,$ $\lambda = 4.0,$ $\lambda = 5.0,$ $\lambda = 6.0$.
 					}}
 				\end{figure}
 				
@@ -952,7 +1007,7 @@
 			\begin{column}{0.5\textwidth}
 				\begin{figure}[htbp]
 					\includegraphics[width=0.75\textwidth,angle=0]{limit_cp} \\
-					\parbox{1.0\textwidth}{\caption*{Fig. 2. Limiting case when a critical point disappears for the HC Yukawa fluid. Fluid-solid binodal [1] (solid line) and liquid-vapor binodal [2] (full squares) for $\lambda=7$. Liquid-vapor binodal [3] (open circles) for $\lambda = 6$.
+					\parbox{1.0\textwidth}{\caption*{Fig. 9. Limiting case when a critical point disappears for the HC Yukawa fluid. Fluid-solid binodal [1] (solid line) and liquid-vapor binodal [2] (full squares) for $\lambda=7$. Liquid-vapor binodal [3] (open circles) for $\lambda = 6$.
 					}}
 				\end{figure}
 				
@@ -1050,6 +1105,27 @@
 	
 	\begin{frame}
 		\frametitle{Summary}
+		
+		\begin{itemize}
+			
+			\item In the framework of collective variables method with a reference system, an explicit expression for the critical temperature is obtained as a function of microscopic parameters of interaction.
+			
+			\vspace{5mm}
+			
+			\item The critical temperature values are calculated for a number of Hard-core van der Waals fluids.
+			
+			\vspace{5mm}
+			
+			\item The results confirm that the critical temperature of simple fluid models decreases as the range of long-range interaction decreases. In other words, the narrower the attractive well, the lower the critical temperature.
+			
+			\vspace{5mm}
+			
+			\item Results are to be published in
+			
+			\textit{Yukhnovskii I. R., Romanik R. V., Ukr. J. Phys., {\bf 69}(9), 671, (2024)}(in print)
+			
+			
+		\end{itemize}
 	\end{frame}
 	
 	
