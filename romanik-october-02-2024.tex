@@ -12,7 +12,7 @@
 %\useoutertheme{tree}
 \usefonttheme[]{serif}
 
-\usepackage[english,ukrainian]{babel}
+%\usepackage[english,ukrainian]{babel}
 %\usepackage[english]{babel}
 \usepackage[OT1,T2A]{fontenc}
 \usepackage[cp1251]{inputenc} % кодування документа; замість cp866nav.
@@ -71,8 +71,12 @@
 			\column{0.5\textwidth}
 			
 			-- Interaction potential: 
+			\hfill
+			\\
+			\hfill
 			
 			Hard-Core + long-range attractive part
+			
 			(a.k.a. hard-core van der Waals fluids)
 			\begin{equation*}
 				\label{interaction_decomp}
@@ -94,8 +98,6 @@
 	
 	\begin{frame}
 		\frametitle{Functional of the Grand Partition Function}
-		\framesubtitle{I.R.~Yukhnovskii, R.V.~Romanik, J. Phys. Stud., {\bf 28}(2), 2602, (2024)
-			doi: 10.30970/jps.28.2602}
 		
 		\begin{equation*}
 			\label{Xi_as_prod}
@@ -123,6 +125,11 @@
 			1 + \frac{\mathfrak{m}_2 \mathfrak{m}_3}{\abs{\mathfrak{m}_4}} + \frac{\mathfrak{m}_3^3}{3\mathfrak{m}_4^2}
 			\right)
 		\end{equation*}
+		\hfill
+		\\
+		\hfill
+		
+		\textit{I.R.~Yukhnovskii, R.V.~Romanik, J. Phys. Stud., {\bf 28}(2), 2602, (2024)}
 		
 	\end{frame}
 	
@@ -227,7 +234,7 @@
 	\begin{frame}
 		\frametitle{Layer-by-layer integration}
 		
-		Yukhnovskii I.R., Romanik R., Ukr. J. Phys., {\bf 69}(9), 671, (2024)(in print)
+		\textit{Yukhnovskii I.R., Romanik R., Ukr. J. Phys., {\bf 69}(9), 671, (2024)}(in print)
 		
 		\begin{eqnarray*}
 			\label{Xi_L_1}
@@ -306,9 +313,9 @@
 			{a_2 + \sqrt{a_2^2 - \frac{4 a_4 R^{(0)}}{\sqrt{\bar{u}}} (1 - \bar{r} - R^{(0)}\sqrt{\bar{u}}) } }.
 		\end{equation*}
 		
-		\textbf{The equatino for the critical density} $\rho^*=\frac{\langle N \rangle}{V}\sigma^3$ 
+		\textbf{The equation for the critical density} $\rho^*=\frac{\langle N \rangle}{V}\sigma^3$:
 		
-		\textit{Yukhnovskii, Idzyk, Kolomiets, J. Stat. Phys., \textbf{80}, 405 (1995)}
+		[\textit{Yukhnovskii, Idzyk, Kolomiets, J. Stat. Phys., \textbf{80}, 405 (1995)}]
 		\begin{equation*}
 			\mathfrak{m}_3(\rho^*_c) = 0 
 		\end{equation*}
@@ -322,6 +329,125 @@
 	
 	\section{Results}
 	
+	\begin{frame}
+		\frametitle{Hard-Core Square-well fluid}
+		
+		\begin{columns}
+			\column{0.5\textwidth}
+			Square-well potential: 
+			\begin{equation*}
+				\label{def:sw}
+				\phi^{SW}(r) = \left\{
+				\begin{array}{llll}
+					\infty, & r\leq \sigma,
+					\\
+					-\varepsilon, & \sigma < r \leq \lambda\sigma,
+					\\
+					0, & r > \sigma.
+				\end{array}
+				\right.
+			\end{equation*}
+			
+			There are several options for defining long-range interaction for $r\leq \sigma$:
+			\hfill
+			\\
+			\hfill
+			
+			-- setting the potential to zero:			
+			\begin{equation*}
+				\Phi(r) = \left\{
+				\begin{array}{cc}
+					0, & r \leq \sigma, 
+					\\
+					\phi^{SW}(r), & r > \sigma;
+				\end{array}
+				\right.
+			\end{equation*}
+			
+			-- applying the Weeks-Chandler-Andersen regularization:			
+			\begin{equation*}
+				\Phi(r) = \left\{
+				\begin{array}{cc}
+					-\varepsilon, & r \leq \sigma, 
+					\\
+					\phi^{SW}(r), & r > \sigma.
+				\end{array}
+				\right.
+			\end{equation*}
+			
+			\textit{Weeks, Chandler, Andersen, J. Chem. Phys. \textbf{54}, 5237 (1971)}
+			
+			\column{0.5\textwidth}
+			\begin{figure}[htbp]
+				\includegraphics[width=0.9\textwidth,angle=0]{hcsw} \\
+				\parbox{0.8\textwidth}{\caption*{Fig. 3. Different regularizations for the square-well potential.
+				}}
+			\end{figure}
+			
+		\end{columns}
+		
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Hard-Core Square-well fluid}
+		
+		\begin{columns}
+			\column{0.5\textwidth}
+			Square-well potential: 
+			\begin{equation*}
+				\label{def:sw}
+				\phi^{SW}(r) = \left\{
+				\begin{array}{llll}
+					\infty, & r\leq \sigma,
+					\\
+					-\varepsilon, & \sigma < r \leq \lambda\sigma,
+					\\
+					0, & r > \sigma.
+				\end{array}
+				\right.
+			\end{equation*}
+			
+			There are several options for defining long-range interaction for $r\leq \sigma$:
+			\hfill
+			\\
+			\hfill
+			
+			-- setting the potential to zero:			
+			\begin{equation*}
+				\Phi(r) = \left\{
+				\begin{array}{cc}
+					0, & r \leq \sigma, 
+					\\
+					\phi^{SW}(r), & r > \sigma;
+				\end{array}
+				\right.
+			\end{equation*}
+			
+			-- applying the Weeks-Chandler-Andersen regularization:			
+			\begin{equation*}
+				\Phi(r) = \left\{
+				\begin{array}{cc}
+					-\varepsilon, & r \leq \sigma, 
+					\\
+					\phi^{SW}(r), & r > \sigma.
+				\end{array}
+				\right.
+			\end{equation*}
+			
+			\textit{Weeks, Chandler, Andersen, J. Chem. Phys. \textbf{54}, 5237 (1971)}
+			
+			\column{0.5\textwidth}
+			\begin{figure}[htbp]
+				\includegraphics[width=0.9\textwidth,angle=0]{hcsw_wca} \\
+				\parbox{0.8\textwidth}{\caption*{Fig. 3. Different regularizations for the square-well potential.
+				}}
+			\end{figure}
+						
+		\end{columns}
+		
+	\end{frame}
+	
+	\iffalse
 	\begin{frame}
 		\frametitle{Hard-Core Square-well fluid}
 		
@@ -393,6 +519,145 @@
 			
 		\end{columns}
 		
+	\end{frame}
+	\fi
+	
+	\begin{frame}
+		\frametitle{Hard-Core Square-well fluid}
+		
+		\begin{columns}
+			\column{0.5\textwidth}
+			\begin{figure}[htbp]
+				\includegraphics[width=0.9\textwidth,angle=0]{cp_coord} \\
+				\parbox{0.8\textwidth}{\caption*{Fig. 4. The critical point coordinates for different values of parameter $\lambda$.
+				}}
+			\end{figure}
+			
+			\textit{Yukhnovskii, Romanik, Ukr. J. Phys., {\bf 69}(9), 671, (2024)}(in print)
+			
+			\column{0.5\textwidth}
+			
+			\begin{table}[h]
+				\noindent\caption{Critical temperature of the HC square-well fluid for different values of $\lambda$.}\vskip3mm\tabcolsep4.5pt
+				\begin{tabular}{|c|c|c|c|}
+					\hline
+					\multicolumn{4}{|c|}{Square-well}\\
+					\hline
+					$\lambda$ & $T_c^*$& $T_c^*$ (WCA) & $T_c^*$ [1] \\
+					\hline
+					1.25 & 0.35 & 0.78 & 0.75 \\
+					1.50 & 0.84 & 1.26 & 1.25 \\
+					1.75 & 1.52 & 1.92 & 1.88 \\
+					2.00 & 2.41 & 2.79 & 2.72 \\
+					\hline
+				\end{tabular}
+			\end{table}
+			
+			[1] \textit{Krejci, Nezbeda, Fluid Phase Equilib. \textbf{314}, 156 (2012)}
+			
+		\end{columns}
+		
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Hard-Core Yukawa fluid}
+		
+		\begin{columns}
+			\begin{column}{0.5\textwidth}
+				Yukawa potential:
+				\begin{equation*}
+					\label{def:yukawa}
+					\phi^Y(r) = -\frac{\varepsilon \sigma}{r} \exp[-\lambda(r/\sigma - 1)].
+				\end{equation*}
+				
+				Long-range interaction regularization for $r \leq \sigma$:
+				\hfill
+				\\
+				\hfill
+				
+				-- setting the potential to zero:
+				\begin{equation*}
+					\Phi(r) = \left\{
+					\begin{array}{ll}
+						0, & r \leq \sigma 
+						\\
+						\phi^Y(r), & r > \sigma.
+					\end{array}
+					\right.
+				\end{equation*}
+				
+				-- Applying the WCA regularization:
+				\begin{equation*}
+					\Phi(r) = \left\{
+					\begin{array}{ll}
+						-\varepsilon, & r \leq \sigma 
+						\\
+						\phi^Y(r), & r > \sigma.
+					\end{array}
+					\right.
+				\end{equation*}
+			\end{column}
+			
+			\begin{column}{0.5\textwidth}
+				\begin{figure}[htbp]
+					\includegraphics[width=0.9\textwidth,angle=0]{hcy} \\
+					\parbox{0.8\textwidth}{\caption*{Fig. 5. Different regularizations for the hard-core Yukawa potential.
+					}}
+				\end{figure}
+			\end{column}
+			
+		\end{columns}
+		
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Hard-Core Yukawa fluid}
+		
+		\begin{columns}
+			\begin{column}{0.5\textwidth}
+				Yukawa potential:
+				\begin{equation*}
+					\label{def:yukawa}
+					\phi^Y(r) = -\frac{\varepsilon \sigma}{r} \exp[-\lambda(r/\sigma - 1)].
+				\end{equation*}
+				
+				Long-range interaction regularization for $r \leq \sigma$:
+				\hfill
+				\\
+				\hfill
+				
+				-- setting the potential to zero:
+				\begin{equation*}
+					\Phi(r) = \left\{
+					\begin{array}{ll}
+						0, & r \leq \sigma 
+						\\
+						\phi^Y(r), & r > \sigma.
+					\end{array}
+					\right.
+				\end{equation*}
+				
+				-- Applying the WCA regularization:
+				\begin{equation*}
+					\Phi(r) = \left\{
+					\begin{array}{ll}
+						-\varepsilon, & r \leq \sigma 
+						\\
+						\phi^Y(r), & r > \sigma.
+					\end{array}
+					\right.
+				\end{equation*}
+			\end{column}
+			
+			\begin{column}{0.5\textwidth}
+				\begin{figure}[htbp]
+					\includegraphics[width=0.9\textwidth,angle=0]{hcy_wca} \\
+					\parbox{0.8\textwidth}{\caption*{Fig. 5. Different regularizations for the hard-core Yukawa potential.
+					}}
+				\end{figure}
+			\end{column}
+			
+		\end{columns}
 		
 	\end{frame}
 	
@@ -460,12 +725,60 @@
 				
 				[2] \textit{El Mendoub, Wax, Jakse, J. Chem. Phys. \textbf{132}, 164503 (2010)}
 			\end{column}
+						
+		\end{columns}
+						
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Hard-Core Lennard-Jones fluid}
+		
+		\begin{columns}
+			\begin{column}{0.55\textwidth}
+				The Hard-Core Lennard-Jones potential
+				\begin{equation*}
+					\phi^{LJ}(r) = \left\{
+					\begin{array}{llll}
+						\infty, & r\leq \sigma,
+						\\
+						-\varepsilon, & \sigma < r \leq r_{\rm m}, 
+						\\
+						4\varepsilon \left[(\sigma/r)^{12} - (\sigma/r)^6\right], & r > r_{\rm m},
+					\end{array}
+					\right.
+				\end{equation*}
+				where $r_{\rm m}=2^{1/6}\sigma$.
+				
+				\textit{Sowers, Sandler, Fluid Phase Equilib \textbf{63}, 1 (1991)}
+				\hfill
+				\\
+				\hfill
+				
+				The WCA regularization for the long-range interaction:
+				\begin{equation*}
+					\Phi(r) = \left\{
+					\begin{array}{ll}
+						-\varepsilon, & r \leq r_{\rm m},
+						\\
+						4\varepsilon \left[(\sigma/r)^{12} - (\sigma/r)^6\right], & r > r_{\rm m}.
+					\end{array}	
+					\right.
+				\end{equation*}
+			\end{column}
 			
+			\begin{column}{0.4\textwidth}
+				
+				\begin{figure}[htbp]
+					\includegraphics[width=0.9\textwidth,angle=0]{hclj_wca} \\
+					\parbox{0.8\textwidth}{\caption*{Fig. 5. Different regularizations for the hard-core Lennard-Jones potential.
+				}}
+				\end{figure}				
+			\end{column}
 			
 		\end{columns}
 		
-				
 	\end{frame}
+	
 	
 	\begin{frame}
 		\frametitle{Hard-Core Lennard-Jones fluid}
@@ -548,6 +861,42 @@
 					\end{array}
 					\right.
 				\end{equation*}
+								
+			\end{column}
+			
+			\begin{column}{0.5\textwidth}
+				\begin{figure}[htbp]
+					\includegraphics[width=0.9\textwidth,angle=0]{hcmorse} \\
+					\parbox{0.8\textwidth}{\caption*{Fig. 5. Different regularizations for the hard-core Morse potential.
+					}}
+				\end{figure}
+				
+			\end{column}
+		\end{columns}
+		
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Hard-Core Morse fluid}
+		
+		\begin{columns}
+			\begin{column}{0.5\textwidth}
+				Morse potential:
+				\begin{equation*}
+					%\label{def:morse}
+					\phi^M(r) = \varepsilon \{{\rm e}^{-2(r-R_0)/\alpha}-2{\rm e}^{-(r-R_0)/\alpha}\}.
+				\end{equation*}
+				
+				Long-range interaction regularization for $r \leq \sigma$:
+				\begin{equation*}
+					\Phi(r) = \left\{
+					\begin{array}{ll}
+						0, & r \leq \sigma 
+						\\
+						\phi^M(r), & r > \sigma.
+					\end{array}
+					\right.
+				\end{equation*}
 				
 				
 			\end{column}
@@ -575,17 +924,6 @@
 				\end{table}
 			\end{column}
 		\end{columns}
-		
-	\end{frame}
-	
-	\begin{frame}
-		\frametitle{When does a critical point disappear?}
-		
-		\begin{figure}[htbp]
-			\includegraphics[width=0.65\textwidth,angle=0]{limit_cp} \\
-			\parbox{0.8\textwidth}{\caption*{Fig. 2. Limiting case when a critical point disappears for the HC Yukawa fluid. Fluid-solid binodal [\textit{Dijkstra, Phys. Rev. E \textbf{66}, 021402 (2002)}] (solid line) and liquid-vapor binodal [\textit{Duda, Romero-Martinez, Orea, J. Chem. Phys. \textbf{126}, 224510 (2007)}] (full squares) for $\lambda=7$. Liquid-vapor binodal [\textit{El Mendoub, Wax, Jakse, J. Chem. Phys. \textbf{132}, 164503 (2010)}] (open circles) for $\lambda = 6$.
-			}}
-		\end{figure}
 		
 	\end{frame}
 	
@@ -624,6 +962,39 @@
 	
 	\begin{frame}
 		\frametitle{Ideas about Reference System in Grand Canonical Ensemble}
+		
+		\textbf{Restriction of the approach}: the critical density $\rho^*_c$ does not depend on the long-range interaction.
+		
+		%\hfill
+		\vspace{10mm}
+		
+		\begin{columns}
+			\begin{column}{0.5\textwidth}
+				How it is now
+				
+				\begin{equation*}
+					\Xi = \Xi_0(T,V,\mu_0;\eta_0) \Xi_G \Xi_L(T, V, \mu; \eta_0)
+				\end{equation*}
+				
+				\begin{equation*}
+					\left(\frac{\partial \ln \Xi}{\partial \beta\mu}\right)_{T,V} = \langle N \rangle = \langle N \rangle_0
+				\end{equation*}
+			\end{column}
+			
+			\begin{column}{0.5\textwidth}
+				How it should be
+				
+				\begin{equation*}
+					\Xi = \Xi_0(T,V,\mu) \Xi_G \Xi_L(T, V, \mu)
+				\end{equation*}
+				
+				\begin{equation*}
+					\left(\frac{\partial \ln \Xi}{\partial \beta\mu}\right)_{T,V} = \langle N \rangle = \langle N \rangle_0 + \Delta \langle N \rangle
+				\end{equation*}
+			\end{column}
+			
+			
+		\end{columns}
 	\end{frame}
 	
 	\section{Summary}
