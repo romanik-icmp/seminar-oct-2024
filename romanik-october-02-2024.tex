@@ -133,6 +133,8 @@
 		
 	\end{frame}
 	
+	\subsection{Layer-by-layer integration}
+	
 	\begin{frame}
 		\frametitle{Layer-by-layer integration}
 		
@@ -294,6 +296,8 @@
 			u^* = \left(\frac{\beta\hat{\Phi}_0}{V}\right)^2 \bar{u}_0
 		\end{equation*}
 	\end{frame}
+	
+	\subsection{Coordinates of the critical point}
 	
 	\begin{frame}
 		\frametitle{Coordinates of the critical point}
@@ -927,6 +931,10 @@
 		
 	\end{frame}
 	
+	\section{Additional discussion}
+	
+	\subsection{When does a critical point disappear?}
+	
 	\begin{frame}
 		\frametitle{When does a critical point disappear?}
 		
@@ -958,38 +966,79 @@
 		
 	\end{frame}
 	
-	\section{Ideas about Reference System in Grand Canonical Ensemble}
+	\begin{frame}
+		\frametitle{Critical density}
+		
+		\begin{eqnarray*}
+			\rho^*_c = 0.2491 & \quad (\eta_c = 0.13044) & \quad \text{in Carnahan-Starling approximation}
+			\\
+			\rho^*_c = 0.2457 & & \quad \text{in Percus-Yevick approximation}
+		\end{eqnarray*}
+		
+		\uncover<2-> {
+			Exactly these values are mentioned in [\textit{Trokhymchuk, Melnyk, Holovko, Nezbeda, J.Mol.Liq. \textbf{228}, 194 (2017)}] for Sutherland fluid with HC reference.
+		}
+		
+		\begin{table}[h]
+			\noindent\caption{Critical density of some HC van der Waals fluids.}\tabcolsep4.5pt
+			\begin{tabular}{|c|c|c|c|c|}
+				\hline
+				\multicolumn{2}{|c|}{Square-well}& \multicolumn{2}{|c|}{HC Yukawa} &{HC Lennard-Jones} \\
+				\hline
+				$\lambda$ & $\rho_c^*$ [1]& $\lambda$ & $\rho_c^*$ (Table I, in [2]) & $\rho_c^*$ [3] \\
+				\hline
+				1.25 & 0.3960 & 0.5 & 0.259 & 0.289 \\
+				1.50 & 0.3016 & 1.0 & 0.279 & \\
+				1.75 & 0.2648 & 1.5 & 0.304 & \\
+				2.00 & 0.2549 & 1.8 & 0.312 & \\
+				     &        & 2.0 & 0.329 & \\
+				     &        & 2.5 & 0.340 & \\
+				     &        & 3.0 & 0.351 & \\
+				\hline
+			\end{tabular}
+		\end{table}
+		
+		[1] \textit{del Rio et al., Mol. Phys. \textbf{100}, 2531 (2012)}
+		
+		[2] \textit{El Mendoub, Wax, Jakse, J. Chem. Phys. \textbf{132}, 164503 (2010)}
+		
+		[3] \textit{Sowers, Sandler, Fluid Phase Equilib. \textbf{63}, 1 (1991)}
+	\end{frame}
+	
+	\subsection{Ideas about Reference System in Grand Canonical Ensemble}
 	
 	\begin{frame}
 		\frametitle{Ideas about Reference System in Grand Canonical Ensemble}
 		
 		\textbf{Restriction of the approach}: the critical density $\rho^*_c$ does not depend on the long-range interaction.
 		
+		This is a direct consequence of the condition $\langle N \rangle = \langle N \rangle_{RS}$
+		
 		%\hfill
 		\vspace{10mm}
 		
 		\begin{columns}
 			\begin{column}{0.5\textwidth}
-				How it is now
+				Current approach:
 				
 				\begin{equation*}
-					\Xi = \Xi_0(T,V,\mu_0;\eta_0) \Xi_G \Xi_L(T, V, \mu; \eta_0)
+					\Xi = \Xi_{RS}(T,V,\mu_{RS}) \Xi_G \Xi_L(T, V, \mu; \eta_{RS})
 				\end{equation*}
 				
 				\begin{equation*}
-					\left(\frac{\partial \ln \Xi}{\partial \beta\mu}\right)_{T,V} = \langle N \rangle = \langle N \rangle_0
+					\left(\frac{\partial \ln \Xi}{\partial \beta\mu}\right)_{T,V} = \langle N \rangle = \langle N \rangle_{RS}
 				\end{equation*}
 			\end{column}
 			
 			\begin{column}{0.5\textwidth}
-				How it should be
+				Possible ways to overcome the limitations:
 				
 				\begin{equation*}
-					\Xi = \Xi_0(T,V,\mu) \Xi_G \Xi_L(T, V, \mu)
+					\Xi = \Xi_{RS}(T,V,\mu) \Xi_G \Xi_L(T, V, \mu)
 				\end{equation*}
 				
 				\begin{equation*}
-					\left(\frac{\partial \ln \Xi}{\partial \beta\mu}\right)_{T,V} = \langle N \rangle = \langle N \rangle_0 + \Delta \langle N \rangle
+					\left(\frac{\partial \ln \Xi}{\partial \beta\mu}\right)_{T,V} = \langle N \rangle = \langle N \rangle_{RS} + \Delta \langle N \rangle
 				\end{equation*}
 			\end{column}
 			
