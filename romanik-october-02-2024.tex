@@ -277,6 +277,12 @@
 	\begin{frame}
 		\frametitle{Recurrence relations}
 		
+		\begin{columns}
+			
+			\begin{column}{0.5\textwidth}
+				
+			
+		
 		In terms of
 		\begin{eqnarray*}
 			r_n & = & d_2^{(n)}(0)s^{2n},
@@ -291,24 +297,44 @@
 			u_{n+1} & = & s u_n E(x_n).
 		\end{eqnarray*}
 		
+		Notation:
+			\begin{equation*}
+				x_n = \sqrt{3}\frac{r_n + q}{\sqrt{u_n}}
+			\end{equation*}
+			
+			\vspace{10mm}
+		
 		A partial solution to the RR is the fixed point
 		\begin{equation*}
 			r_{n+1} = r_n = r^*; \quad u_{n+1} = u_n = u^*
 		\end{equation*}
 		
-		The particular values of the fixed point coordinates depend on the long-range interaction
-		\begin{equation*}
-			r^* = \frac{\beta\hat{\Phi}_0}{V} \bar{r}, 
-			\qquad 
-			u^* = \left(\frac{\beta\hat{\Phi}_0}{V}\right)^2 \bar{u}_0
-		\end{equation*}
+		\end{column}
 		
-		Recurrence relations linearized near the fixed point
-		\begin{eqnarray*}
-			r_n & = & r^* + c_1 E_1^n + c_2 R E_2^n,
-			\nonumber \\
-			u_n & = & u^* + c_1 R_1 E_1^n + c_2 E_2^n,
-		\end{eqnarray*}
+		\begin{column}{0.5\textwidth}
+			
+			The particular values of the fixed point coordinates depend on the long-range interaction
+			\begin{equation*}
+				r^* = \frac{\beta\hat{\Phi}_0}{V} \bar{r}, 
+				\qquad 
+				u^* = \left(\frac{\beta\hat{\Phi}_0}{V}\right)^2 \bar{u}_0
+			\end{equation*}
+			
+			Recurrence relations linearized near the fixed point
+			\begin{eqnarray*}
+				r_n & = & r^* + c_1 E_1^n + c_2 R E_2^n,
+				\nonumber \\
+				u_n & = & u^* + c_1 R_1 E_1^n + c_2 E_2^n,
+			\end{eqnarray*}
+			
+		where
+		\begin{equation*}
+			E_1>1, \quad E_2<1.
+		\end{equation*}
+			
+		\end{column}
+		
+		\end{columns}
 	\end{frame}
 	
 	\subsection{Coordinates of the critical point}
@@ -387,6 +413,8 @@
 	\end{frame}
 	
 	\section{Results}
+	
+	\subsection{Hard-core square well fluid}
 	
 	\begin{frame}
 		\frametitle{Hard-Core Square-well fluid}
@@ -622,6 +650,8 @@
 		
 	\end{frame}
 	
+	\subsection{Hard-core Yukawa fluid}
+	
 	\begin{frame}
 		\frametitle{Hard-Core Yukawa fluid}
 		
@@ -794,6 +824,8 @@
 						
 	\end{frame}
 	
+	\subsection{Hard-core Lennard-Jones fluid}
+	
 	\begin{frame}
 		\frametitle{Hard-Core Lennard-Jones fluid}
 		
@@ -905,6 +937,8 @@
 		\end{columns}
 		
 	\end{frame}
+	
+	\subsection{Hard-core Morse fluid}
 	
 	\begin{frame}
 		\frametitle{Hard-Core Morse fluid}
